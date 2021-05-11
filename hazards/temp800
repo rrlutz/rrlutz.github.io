@@ -1,0 +1,73 @@
+From destatez@cca.rockwell.com  Wed Feb 26 11:25:07 1997
+Return-Path: destatez@cca.rockwell.com
+Received: from gatekeeper.cca.rockwell.com (gatekeeper.cca.rockwell.com [131.198.201.1]) by cs.iastate.edu (8.7.4/8.7.1) with SMTP id LAA20323 for <rlutz@cs.iastate.edu>; Wed, 26 Feb 1997 11:25:02 -0600 (CST)
+Received: by gatekeeper.cca.rockwell.com; id LAA17514; Wed, 26 Feb 1997 11:24:51 -0600
+Received: from hwking.cca.rockwell.com(131.198.213.213) by gatekeeper.cca.rockwell.com via smap (3.2)
+	id xma017511; Wed, 26 Feb 97 11:24:23 -0600
+Received: from sach.cca.rockwell.com by hwking.cca.rockwell.com; (5.65v3.2/1.1.8.2/06Aug95-0809AM)
+	id AA13959; Wed, 26 Feb 1997 11:24:24 -0600
+Received: from sach (localhost [127.0.0.1]) by sach.cca.rockwell.com (8.6.12+sb+dnet/8.6.4) with SMTP id LAA31426; Wed, 26 Feb 1997 11:24:23 -0600
+Sender: destatez@cca.rockwell.com
+Message-Id: <331471C7.2F1C@CCA.Rockwell.com>
+Date: Wed, 26 Feb 1997 11:24:23 -0600
+From: "David E. Statezni" <destatez@cca.rockwell.com>
+Organization: CCA Advanced Technology & Engineering
+X-Mailer: Mozilla 3.0 (X11; I; OSF1 V3.2 alpha)
+Mime-Version: 1.0
+To: "Michelle Moseman (ISU)" <mmoseman@iastate.edu>
+Cc: "Robyn Lutz (ISU)" <rlutz@cs.iastate.edu>
+Subject: Object Model review
+Content-Type: multipart/mixed; boundary="------------7DE144876201"
+Status: R
+
+This is a multi-part message in MIME format.
+
+--------------7DE144876201
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+-- 
+David E. Statezni	  Phone: (319)295-8449 FAX: (319)295-4550
+Rockwell Int.  MS 124-211
+400 Collins Rd NE
+Cedar Rapids. IA 52498
+
+--------------7DE144876201
+Content-Type: text/plain; charset=us-ascii; name="ISU_Objects"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline; filename="ISU_Objects"
+
+Michelle
+
+We have finally gotten around to reviewing your Object draft. Since we
+were not sure exactly where you were going with this, beyond a learning
+curve, we weren't sure exactly how to response.  I will give you our
+comments as they relate to our Requirements modeling and as we get into
+design/code, we will keep you posted on where we are at with objects.
+
+We agreed with the existence of all of you objects except Unusual
+Attitude, which is more of a state than an object. One concern was that we
+didn't see any decision modeling going on, with a lot of "hard" constant
+values specified that are really a function of decisions. We did not go
+into a lot of depth related to the content of attributes & behaviours on
+all of the objects for that reason.  One a slightly different note, we
+would suggest that you not use the terminology "Messages", but talk of
+data sources. Using the ADAGE model, all of the inputs to the EFIS come
+from the aircraft model, as the highest level of abstraction. Some inputs
+come from different subsystems: guidance, navigation...., so the more
+abstract you can be in defining the inputs the better. Your use of Pitch
+Angle and Roll Angle is better than Attitude/Heading source, since the
+later may change in time with new technologies, but the former is the
+reality.  Instead of using FCC MODE WD x you could refer to Guidance
+subsystem Modes, since when you move to the Raytheon Aircraft the FCC
+becomes the FGC (Flight Guidance computer). New architectures will have
+new names for these computers, but they are still sources for Guidance
+Modes.
+
+If you have any more questions or comments, please reply. We will keep you
+in the loop on our OO design.
+
+Dave
+
+--------------7DE144876201--
+

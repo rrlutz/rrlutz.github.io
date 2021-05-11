@@ -1,0 +1,5 @@
+AuthName "Automated Software Engineering 2015"
+AuthType Basic
+AuthBasicProvider file
+AuthUserFile /home/staff/rlutz/.htpasswd
+require user ase2015

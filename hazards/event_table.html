@@ -1,0 +1,180 @@
+<BODY>
+<FONT SIZE = 8><CENTER><B>Events table</B></CENTER></FONT>
+<TABLE BORDER>
+
+<TR>
+<TH>Event</TH><TH>Event Fault Type</TH><TH>Description</TH><TH>Effect</TH>
+</TR>
+<TR>
+<TD>No cue -> Single Cue</TD>
+<TD>Halt/Abnormal Termination</TD>
+<TD>Processing Stops</TD>
+<TD>No cue displayed</TD>
+</TR>
+<TR>		
+<TD>No cue -> Single Cue</TD>	
+<TD>Omission</TD>
+<TD>Jump in Processing</TD>
+<TD>No cue displayed</TD>
+</TR>
+<TR>			
+<TD>No cue -> Single Cue</TD>	
+<TD>Incorrect Logic/Event</TD>
+<TD>FCC MODE WD 4 STEERING COMMANDS IN VIEW = FALSE</TD>
+<TD>Unknown</TD>
+</TR>
+<TR>			
+<TD>No cue -> Single Cue</TD>	
+<TD>Incorrect Logic/Event</TD>
+<TD>FD DISPLAY = XPTR</TD>
+<TD>Split Cue displayed</TD>
+</TR>
+<TR>			
+<TD>No cue -> Single Cue	</TD>
+<TD>Timing/Order	</TD>
+<TD>Obsolete data</TD>
+<TD>Probably handled by FGS</TD>
+</TR>
+<TR>		
+<TD>No Cue -> Split Cue	</TD>
+<TD>Halt/Abnormal Termination</TD>		
+<TD>Processing Stops</TD>
+<TD>No cue displayed</TD>
+</TR>
+<TR>			
+<TD>No Cue -> Split Cue	</TD>
+<TD>Omission		</TD>
+<TD>Jump in Processing</TD>
+<TD>No cue displayed</TD>
+</TR>
+<TR>			
+<TD>No Cue -> Split Cue	</TD>
+<TD>Incorrect Logic/Event	</TD>	
+<TD>FCC MODE  WD4 STEERING COMMANDS IN VIEW = FALSE</TD>
+<TD>Unknown</TD>
+</TR>
+<TR>			
+<TD>No cue -> Split Cue</TD>	
+<TD>Incorrect Logic/Event</TD>
+<TD>FD DISPLAY = XPTR</TD>
+<TD>Single Cue</TD>
+</TR>
+<TR>			
+<TD>No Cue -> Split Cue	</TD>
+<TD>Timing/Order	</TD>
+<TD>Obsolete data</TD>
+<TD>Probably handled by FGS</TD>
+</TR>
+<TR>			
+<TD>Single Cue -> No Cue	</TD>
+<TD>Halt/Abnormal Termination		</TD>
+<TD>Processing Stops</TD>
+<TD>Single Cue</TD>
+</TR>
+<TR>			
+<TD>Single Cue -> No Cue	</TD>
+<TD>Omission		</TD>
+<TD>Jump in Processing</TD>
+<TD>Single Cue or Split Cue displayed</TD>
+</TR>
+<TR>			
+<TD>Single Cue -> No Cue	</TD>
+<TD>Incorrect Logic/Event		</TD>
+<TD>Flight Control Failure signaled when no failure</TD>
+<TD>Cue needlessly removed</TD>
+</TR>
+<TR>			
+<TD>Single Cue -> No Cue	</TD>
+<TD>Incorrect Logic/Event		</TD>
+<TD>Flight Control Failure not signaled when a control failure exists</TD>
+<TD>Single Cue remains displayed - Mislead pilot</TD>
+</TR>
+<TR>					
+<TD>Single Cue -> No Cue	</TD>
+<TD>Timing/Order			</TD>	
+<TD>Obsolete data</TD>
+<TD></TD>
+</TR>
+<TR>			
+<TD>Split Cue -> No Cue	</TD>
+<TD>Halt/Abnormal Termination</TD>		
+<TD>Processing Stops</TD>
+<TD>Split Cue displayed</TD>
+</TR>
+<TR>					
+<TD>Split Cue -> No Cue	</TD>
+<TD>Omission			</TD>	
+<TD>Jump in Processing</TD>
+<TD>Single or Split cue diplayed</TD>
+</TR>
+<TR>			
+<TD>Split Cue -> No Cue	</TD>
+<TD>Incorrect Logic/Event	</TD>		
+<TD>Flight Control Failure not signaled when a control failure exists</TD>
+<TD>Split Cue remains displayed - Mislead pilot</TD>
+</TR>
+<TR>				
+<TD>Split Cue -> No Cue	</TD>
+<TD>Timing/Order		</TD>
+<TD>Obsolete data</TD>
+<TD></TD>
+</TR>
+<TR>					
+<TD>FD Flag not displayed -> FD Flag displayed</TD>	
+<TD>Halt/Abnormal Termination</TD>
+<TD>Processing Stops</TD>
+<TD>FD Flag not displayed</TD>
+</TR>
+<TR>				
+<TD>FD Flag not displayed -> FD Flag displayed</TD>	
+<TD>Omission</TD>
+<TD>Jump in Processing</TD>
+<TD>FD Flag not displayed</TD>
+</TR>
+<TR>				
+<TD>FD Flag not displayed -> FD Flag displayed	</TD>
+<TD>Incorrect Logic/Event</TD>	
+<TD>FD Failure Conditions not signaled when Failure Conditions exisit</TD>
+<TD>FD Flag not displayed</TD>
+</TR>
+<TR>				
+<TD>FD Flag not displayed -> FD Flag displayed	</TD>
+<TD>Timing/Order</TD>
+<TD>Obsolete data</TD>	
+<TD></TD>
+</TR>
+<TR>
+<TD>FD Flag displayed-> FD Flag not displayed	</TD>
+<TD>Halt/Abnormal Termination</TD>
+<TD>Processing Stops</TD>
+<TD>FD Flag displayed</TD>
+</TR>
+<TR>		
+<TD>FD Flag displayed-> FD Flag not displayed	</TD>
+<TD>Omission	</TD>
+<TD>Jump in Processing</TD>	
+<TD>FD Flag displayed</TD>
+</TR>
+<TR>	
+<TD>FD Flag displayed-> FD Flag not displayed	</TD>
+<TD>Incorrect Logic/Event	</TD>
+<TD>FD Failure Conditions signaled when Failure Conditions do not exisit</TD>
+<TD>FD Flag displayed</TD>
+</TR>
+<TR>	
+<TD>FD Flag displayed-> FD Flag not displayed	</TD>
+<TD>Timing/Order</TD>
+<TD>Obsolete data</TD>	
+<TD></TD>
+</TR>
+</TABLE>
+</BODY>		
+
+
+
+
+
+
+
+
+

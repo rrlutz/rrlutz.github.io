@@ -1,0 +1,10 @@
+AuthUserFile /home/staff/rlutz/.htpasswords
+AuthGroupFile /dev/null
+AuthName Stuff
+AuthType Basic
+<Limit GET>
+order deny,allow
+deny from all
+allow from 129.186 .iastate.edu .rockwell.com
+require user rcavsfty
+</Limit>

@@ -1,0 +1,225 @@
+<BODY>
+<FONT SIZE = 8><B><CENTER>Data Table</CENTER></B></FONT>
+
+<TABLE BORDER>
+<TR>
+<TH>Data Item</TH><TH>Data Fault Type</TH>
+<TH>Description</TH><TH>Effect</TH>
+</TR>
+<TR>
+<TD>FD ROLL STEERING (140)</TD>
+<TD>Absent Data</TD>
+<TD>No data</TD>
+<TD>Roll Failure Single Cue/Roll Cue Removed FD Flag displayed</TD>
+</TR>
+<TR>
+<TD>FD ROLL STEERING (140)</TD>
+<TD>Incorrect Data</TD>
+<TD>No data or wrong data</TD>
+<TD>Incorrect Cue If calculated roll > +/- 20 degrees, effect unknown</TD>
+</TR>
+<TR>
+<TD>FD ROLL STEERING (140)</TD>
+<TD>Timing of Data Wrong</TD>
+<TD>Linear filter wrong No update, obsolete data</TD>
+<TD>Incorrect Cue If calculated roll > +/- 20 degrees, effect unknown</TD>
+</TR>
+<TR>
+<TD>FD PITCH STEERING (141)</TD>
+<TD>Absent Data</TD>
+<TD>No data</TD>
+<TD>Pitch Failure Single Cue/Pitch Cue removed FD Flag displayed</TD>
+</TR>
+<TR>
+<TD>FD PITCH STEERING (141)</TD>
+<TD>Incorrect Data</TD>
+<TD>No data or wrong data</TD>
+<TD>Incorrect cue - If calculated pitch > +/- 20 degrees, effect unknown</TD>
+</TR>
+<TR>
+<TD>FD PITCH STEERING (141)</TD>
+<TD>Timing of Data Wrong</TD>
+<TD>Linear filter wrong No update, obsolete data</TD>
+<TD>Incorrect cue - If calculated pitch > +/- 20 degrees, effect unknown</TD>
+</TR>
+<TR>
+<TD>PFD MODE SELECT (163)</TD> 
+<TD>Absent Data</TD> 	
+<TD>No data</TD> 	
+<TD>Displayed cue when should not be</TD> 
+</TR>
+<TR>
+<TD>PFD MODE SELECT (163)	</TD> 
+<TD>Incorrect Data	</TD> 
+<TD>TRUE when should be FALSE	</TD> 
+<TD>Cue is not displayed</TD> 
+</TR>
+<TR>
+<TD>PFD MODE SELECT (163)	</TD> 
+<TD>Incorrect Data	</TD> 
+<TD>FALSE when should be TRUE	</TD> 
+<TD>Display cue in violation of FGS intent</TD> 
+</TR>
+<TR>
+<TD>PFD MODE SELECT (163)</TD>
+<TD>Timing of Data Wrong</TD>
+<TD>TRUE when should be FALSE</TD>
+<TD>Cue is not displayed</TD>
+</TR>
+<TR>
+<TD>PFD MODE SELECT (163)</TD>
+<TD>Timing of Data Wrong</TD>
+<TD>FALSE when should be TRUE</TD>
+<TD>Display cue in violation of FGS intent</TD>
+</TR>
+<TR>
+<TD>FCC MODE WD 4 (255)	</TD> 
+<TD>Absent Data</TD> 
+<TD>No data	</TD> 
+<TD>Flight Control Failure - Cue removed</TD> 
+</TR>
+<TR>
+<TD>FCC MODE WD 4 (255)	</TD> 
+<TD>Incorrect Data	</TD> 
+<TD>FALSE when should be TRUE	</TD> 
+<TD>No cue</TD> 
+</TR>
+<TR>
+<TD>FCC MODE WD 4 (255)</TD> 	
+<TD>Timing of Data Wrong	</TD> 
+<TD>No update Obsolete data</TD> 
+<TD></TD>	
+</TR>
+<TR>
+<TD>PITCH ANGLE (324)	</TD> 
+<TD>Absent Data</TD> 
+<TD>No data	</TD> 
+<TD>Pitch Failure 
+Single Cue/Pitch Cue Removed Possibly cause Unusual Attitude where FC 
+annunciations are removed</TD> 
+</TR>
+<TR>
+<TD>PITCH ANGLE (324)	</TD> 
+<TD>Incorrect Data</TD> 
+<TD></TD>		
+<TD>Pitch Failure 
+Single Cue/Pitch Cue Removed Possibly cause Unusual Attitude where FC 
+annunciations are removed</TD> 
+</TR>
+<TR>
+<TD>PITCH ANGLE (324)	</TD> 
+<TD>Timing of Data Wrong	</TD> 
+<TD>No update Obsolete data	</TD> 
+<TD>Pitch Failure 
+Single Cue/Pitch Cue Removed Possibly cause Unusual Attitude where FC 
+annunciations are removed</TD> 
+</TR>
+<TR>
+<TD>ROLL ANGLE (325)	</TD> 
+<TD>Absent Data</TD> 
+<TD>No data	</TD> 
+<TD>Roll failure Single Cue/Roll Cue Removed     
+Incorrect cue - 
+If calculated roll > +/- 20 degrees, 
+effect unknown Possibly cause Unusual Attitude where FC annunciations are 
+removed</TD> 
+</TR>
+<TR>
+<TD>ROLL ANGLE (325)</TD> 	
+<TD>Incorrect Data		</TD> 
+<TD></TD> 
+<TD>Incorrect Cue - If calculated roll > +/- 20 degrees, 
+effect unknown Possibly cause Unusual Attitude where FC annunciations are 
+removed</TD> 
+</TR>
+<TR>
+<TD>ROLL ANGLE (325)</TD> 	
+<TD>Timing of Data Wrong	</TD> 
+<TD>No update Obsolete data	</TD> 
+<TD>Incorrect cue - 
+If calculated roll > +/- 20 degrees, 
+effect unknown Possibly cause Unusual Attitude where FC annunciations are 
+removed</TD> 
+</TR>
+<TR>
+<TD>UNUSUAL ATTITUDE</TD> 
+<TD>Absent Data</TD> 
+<TD>No data</TD> 
+<TD>Cues remain even if inaccurate</TD> 
+</TR>
+<TR>
+<TD>UNUSUAL ATTITUDE</TD> 
+<TD>Incorrect Data	</TD> 
+<TD>Flag set to TRUE during normal attitude</TD> 	
+<TD>Cues removed unnecessarily</TD> 
+</TR>
+<TR>
+<TD>UNUSUAL ATTITUDE</TD> 
+<TD>Timing of Data Wrong	</TD> 
+<TD>Flag set to TRUE during normal attitude</TD> 	
+<TD>Cues removed unnecessarily</TD> 
+</TR>
+<TR>
+<TD>Single Cue</TD> 
+<TD>Absent Data</TD> 
+<TD>Missing cue	</TD> 
+<TD>Loss of information FD Flag displayed</TD> 
+</TR>
+<TR>
+<TD>Single Cue</TD> 
+<TD>Incorrect Data	</TD> 
+<TD>Wrong placement of cue on monitor</TD> 
+<TD>Mislead pilot</TD> 
+</TR>
+<TR>
+<TD>Single Cue</TD> 
+<TD>Timing of Data Wrong</TD> 
+<TD>No update Obsolete data</TD> 	
+<TD>Mislead pilot Filtering of obsolete data unknown</TD> 
+</TR>
+<TR>
+<TD>Split Cue</TD> 
+<TD>Absent Data</TD> 
+<TD>Missing cue</TD> 
+<TD>Loss of information FD Flag displayed</TD> 
+</TR>
+<TR>
+<TD>Split Cue</TD> 
+<TD>Incorrect Data	</TD> 
+<TD>Wrong placement of cue on monitor</TD> 	
+<TD>Mislead pilot</TD> 
+</TR>
+<TR>
+<TD>Split Cue</TD> 
+<TD>Timing of Data Wrong</TD> 	
+<TD>No update Obsolete data	</TD> 
+<TD>Mislead pilot Filtering of obsolete data unknown</TD> 
+</TR>
+<TR>
+<TD>FD Flag</TD> 
+<TD>Absent Data</TD> 
+<TD>Missing flag when it should be displayed</TD> 	
+<TD>Pilot may erroneously trust cue</TD> 
+</TR>
+<TR>
+<TD>FD Flag</TD> 
+<TD>Incorrect Data</TD> 	
+<TD>Flag displayed when not needed</TD> 	
+<TD>Pilot needlessly mistrusts cue</TD> 
+</TR>
+<TR>
+<TD>FD Flag</TD> 
+<TD>Timing of Data Wrong</TD> 	
+<TD>No update Obsolete data	</TD> 
+<TD>Filtering of obsolete data unknown</TD> 
+</TR>
+
+
+
+
+
+
+
+
+</TABLE>
+</BODY>
